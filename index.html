@@ -14,8 +14,8 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about" class="underGrowth">About</a></li>
-                <li><a href="#experience" class="underGrowth">Experience</a></li>
                 <li><a href="#projects" class="underGrowth">Projects</a></li>
+                <li><a href="#experience" class="underGrowth">Experience</a></li>
                 <li><a href="#contact" class="underGrowth">Contact</a></li>
             </ul>
         </div>
@@ -33,10 +33,10 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">
                     About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">
-                    Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">
                     Projects</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">
+                    Experience</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">
                     Contact</a></li>
             </div>
@@ -79,12 +79,68 @@
         </div>
     </section>
     
+    <!--About Me-->
     <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
         
+        <div class="section-container">
+            <!--Profile Picture-->
+            <div class="section_pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" 
+                    class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <!--Experience-->
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon"
+                            class="icon">
+                        <h3>Experience</h3>
+                        <p style="color: white">Australian Institute for Machine Learning</p>
+                        <p>Research Under Supervision of AIML Professor</p>
+                    </div>
+                    <!--Education-->
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Experience Icon"
+                            class="icon">
+                        <h3>Education</h3>
+                        <p style="color: white">ATAR: 99.95  |  GPA: 6.44 </p>
+                        <p>Bachelor of Computer Science (Advanced)</p>
+
+                    </div>
+                </div>
+                <p>
+                    I'm a penultimate computer science student in the advanced course 
+                    at the University of Adelaide, who has developed a passion for 
+                    programming thanks to the problem solving 
+                    challenges and boundless creativity software development offers.
+                    <br><br>
+                    I'm a member of the Computer Science Club and a Committee Member of 
+                    the Competitive Programming Club, which involves monthly tournaments 
+                    where teams compete to solve the most algorithims.
+                    <br><br>
+                    Outside of programming I love anything to do with the outdoors, from 
+                    wake boarding to snow boarding, if it involves nature, I’m in! I believe 
+                    these diverse interests keep me well rounded and ensure I remain a 
+                    dynamic learner, always eager to create, innovate, and explore new 
+                    horizons, both in computer science and life.  
+                </p>
+                <!--Down Arrow-->
+                <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+                onclick="location.href='./#experience'">
+            </div>
+            
+
+        </div>
     </section>
 
+    <!--Projects **put before experience-->
 
+    <!--Experience-->
+    <section id="experience">
 
+    </section>
 
 
     <script src="script.js"></script>

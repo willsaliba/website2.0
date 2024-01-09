@@ -15,7 +15,7 @@ p { color: rgb(226, 226, 226); }
 
 li { list-style: none; }
 
-/* TRANISITION */
+.icon { cursor: pointer; height: 3rem; }
 
 a, .btn { transition: all 300ms ease; }
 
@@ -100,13 +100,9 @@ a:hover { color: grey; text-decoration-color: grey; }
 }
 
 .menu-links.open { max-height: 300px; }
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
+.hamburger-icon.open span:first-child {transform: rotate(45deg) translate(10px, 5px);}
 .hamburger-icon.open span:nth-child(2) { opacity: 0; }
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-}
+.hamburger-icon.open span:last-child {transform: rotate(-45deg) translate(10px, -5px);}
 .hamburger-icon span:first-child { transform: none; }
 .hamburger-icon span:first-child { opacity: 1; }
 .hamburger-icon span:first-child { transform: none; }
@@ -120,7 +116,11 @@ section {
     min-height: fit-content;
 }
 
-.section-container {display: flex;}
+.section-container {
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+}
 
 /* PROFILE SECTION */
 
@@ -128,7 +128,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 7rem;
-    height: 80vh;
+    height: 85vh;
 }
 
 .section_pic-container {
@@ -183,7 +183,7 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color-1, .btn-color-2 { border: rgb(182, 182, 182) 0.1rem solid }
+.btn-color-1, .btn-color-2 { border: rgb(182, 182, 182) 0.1rem solid; }
 
 .btn-color-1:hover, .btn-color-2:hover {
     background: rgb(57, 58, 75);
@@ -193,5 +193,41 @@ section {
 
 .btn-container { gap: 1rem; }
 
-/* ICONS */
-.icon { cursor: pointer; height: 3rem; }
+/* ABOUT */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.about-containers { 
+    gap: 2rem; 
+    margin-bottom: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container { display: flex; }
+
+.about-pic { border-radius: 2rem; }
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: rgb(38, 38, 38);
+    border-radius: 2rem;
+    border: rgb(182, 182, 182) 0.1rem solid;
+    border-color: rgb(96, 194, 194);
+    text-align: center;
+}
